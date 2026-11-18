@@ -307,3 +307,128 @@ header {
     line-height: 1.5;
     margin: 8px 0;
 }
+
+
+/* INTERESTS SECTION  */
+
+#interests {
+    min-height: calc(100vh - 90px);
+    height: auto;
+    padding: 20px 8% 25px;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#interests h2 {
+    color: var(--primary-colour);
+    font-family: var(--heading-font);
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin: 0 0 15px;
+}
+
+.interests-container {
+    flex: 1;
+    min-height: 450px;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+
+    grid-template-areas:
+        "anime anime swimming friends friends cricket"
+        "anime anime biryani beaches beaches waterfalls";
+
+    gap: 5px;
+}
+
+.interest-photo {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.anime {
+    grid-area: anime;
+    background-image: var(--interest-anime);
+}
+
+.swimming {
+    grid-area: swimming;
+    background-image: var(--interest-swimming);
+}
+
+.friends {
+    grid-area: friends;
+    background-image: var(--interest-friends);
+}
+
+.cricket {
+    grid-area: cricket;
+    background-image: var(--interest-cricket);
+}
+
+.biryani {
+    grid-area: biryani;
+    background-image: var(--interest-biryani);
+}
+
+.beaches {
+    grid-area: beaches;
+    background-image: var(--interest-beaches);
+}
+
+.waterfalls {
+    grid-area: waterfalls;
+    background-image: var(--interest-waterfalls);
+}
+
+.interest-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.interest-photo span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -40%);
+
+    width: 90%;
+
+    color: var(--cardtext-colour);
+    font-family: var(--heading-font);
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.interest-photo:hover::before {
+    opacity: 1;
+}
+
+.interest-photo:hover span {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
