@@ -729,3 +729,87 @@ header {
     margin: 8px 0 0;
 }
 
+/* CONTACT  */
+
+#footer {
+    min-height: auto;
+    padding: 35px 5% 15px;
+
+    box-sizing: border-box;
+
+    border-top: 2px solid var(--primary-colour);
+    background-color: var(--background-colour);
+}
+
+#contact {
+    min-height: auto;
+    padding: 0;
+    scroll-margin-top: 100px;
+}
+
+.footer-heading h2 {
+    font-size: 36px;
+}
+
+.footer-heading .hobby-line {
+    margin: 12px 0 25px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--primary-colour);
+    border-radius: 12px;
+
+    color: var(--primary-colour);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.contact-item h3 {
+    color: var(--text-colour);
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.contact-item a {
+    color: var(--secondary-colour);
+    font-size: 13px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: var(--primary-colour);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--secondary-colour);
+    font-size: 12px;
+
+    margin: 30px 0 0;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--secondary-colour);
+}
