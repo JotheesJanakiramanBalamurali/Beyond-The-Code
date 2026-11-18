@@ -1,0 +1,152 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    font-family: var(--main-font);
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+#hero,
+#journey,
+#interests,
+#family,
+#hobbies {
+    width: 100%;
+}
+
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    min-height: 90px;
+    padding: 18px 4%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: var(--background-colour);
+}
+
+.companylogo {
+    color: var(--primary-colour);
+    text-decoration: none;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.nav-link {
+    color: var(--text-colour);
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-colour);
+}
+
+#theme-button {
+    background-color: var(--primary-colour);
+    color: var(--background-colour);
+    border: none;
+    padding: 14px 18px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: opacity 0.3s ease;
+}
+
+#theme-button:hover {
+    opacity: 0.8;
+}
+
+
+/* HERO SECTION */
+
+#hero {
+    min-height: calc(100vh - 90px);
+    padding: 40px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+    /* background-image: var(--hero-background); */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero h2 {
+    color: var(--primary-colour);
+    font-family: var(--heading-font);
+    font-size: clamp(48px, 7vw, 80px);
+    letter-spacing: 8px;
+    margin: 0;
+    transform: translateX(-300px);
+}
+
+#hero h3 {
+    color: var(--text-colour);
+    font-family: var(--main-font);
+    font-size: clamp(25px, 4vw, 45px);
+    letter-spacing: 5px;
+    margin: 0;
+    transform: translateX(-300px);
+}
+
+#hero p {
+    color: var(--secondary-colour);
+    font-family: var(--main-font);
+    font-size: clamp(16px, 2vw, 25px);
+    margin: 0;
+    transform: translateX(-300px);
+}
+
+.scroll-button {
+    display: inline-block;
+    background-color: var(--primary-colour);
+    color: var(--background-colour);
+    padding: 16px 22px;
+    text-decoration: none;
+    margin-top: 90px;
+    transition: transform 0.3s ease;
+    transform: translateX(-300px);
+    
+}
+
