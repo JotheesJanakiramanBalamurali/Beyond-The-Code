@@ -598,3 +598,134 @@ header {
     background-color: var(--primary-colour);
     margin-top: 30px;
 }
+
+/* HOBBIES SECTION  */
+
+#hobbies {
+    min-height: auto;
+    box-sizing: border-box;
+
+    padding: 70px 5% 110px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 2.5fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.hobbies-intro h2,
+.footer-heading h2 {
+    color: var(--primary-colour);
+    font-family: var(--heading-font);
+    font-size: 42px;
+    margin: 0;
+}
+
+.hobby-line {
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: var(--primary-colour);
+    margin: 20px 0;
+}
+
+.hobbies-intro p {
+    color: var(--text-colour);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.hobby-card {
+    height: 300px;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid var(--primary-colour);
+    border-radius: 18px;
+
+    background-color: var(--card-colour);
+
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+}
+
+.hobby-image {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.hobby-card:hover .hobby-image {
+    transform: scale(1.08);
+}
+
+
+
+.movie-image {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+        var(--hobby-movies);
+}
+
+.music-image {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+        var(--hobby-music);
+}
+
+.ride-image {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+        var(--hobby-rides);
+}
+
+.tea-image {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+        var(--hobby-tea);
+}
+
+.gym-image {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+        var(--hobby-gym);
+}
+
+/* Hobby Text */
+
+.hobby-info {
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    right: 5px;
+    z-index: 1;
+
+    text-align: center;
+    color: var(--cardtext-colour);
+}
+
+.hobby-info span {
+    font-size: 30px;
+}
+
+.hobby-info h3 {
+    font-family: var(--main-font);
+    font-size: 17px;
+    margin: 8px 0 0;
+}
+
