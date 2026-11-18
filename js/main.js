@@ -57,3 +57,11 @@ journeyCards.forEach((card, index) => {
     });
 });
 
+
+	
+// Family Card Flip
+const familyCard = document.getElementById("family-card");
+
+familyCard.addEventListener("click", function () {
+    familyCard.classList.toggle("flipped");
+});
